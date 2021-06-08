@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 from sklearn import datasets
 from sklearn.ensemble import RandomForestRegressor
 
+#TODO: The below code will ignore the warnings for plotting library. Fix this using subplot and passing fig to st.pyplot()
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 st.write("""
 # Boston House Price Prediction App
 This app predicts the **Boston House Price**!
