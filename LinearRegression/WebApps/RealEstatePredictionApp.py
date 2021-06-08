@@ -17,6 +17,15 @@ boston = datasets.load_boston()
 X = pd.DataFrame(boston.data, columns=boston.feature_names)
 Y = pd.DataFrame(boston.target, columns=["MEDV"])
 
+st.write("Let's Check how the input file looks like")
+st.header('Independent Variables')
+st.write(X)
+st.write('---')
+
+st.header('Dependent Variables')
+st.write(Y)
+st.write('---')
+
 # Sidebar
 # Header of Specify Input Parameters
 st.sidebar.header('Specify Input Parameters')
