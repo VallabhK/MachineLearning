@@ -19,11 +19,11 @@ Y = pd.DataFrame(boston.target, columns=["MEDV"])
 
 st.write("Let's Check how the input file looks like")
 st.header('Independent Variables')
-st.write(X)
+st.write(X.head())
 st.write('---')
 
 st.header('Dependent Variables')
-st.write(Y)
+st.write(Y.head())
 st.write('---')
 
 # Sidebar
