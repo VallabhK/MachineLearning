@@ -5,12 +5,32 @@ import numpy as np
 class LogisticRegression:
 
     def __init__(self, lr=0.001, n_iters=1000):
+    """Init Function used to initialize variables
+
+    Args:
+        lr: learning rate
+        n_iters: Number of iterations
+
+    Returns:
+        None
+
+    """
         self.lr = lr
         self.n_iters = n_iters
         self.weights = None
         self.bias = None
 
     def fit(self, X, y):
+    """Function used to define the relation between dependent and independent variables
+
+    Args:
+        X: Independent variable
+        y: Dependent variable
+
+    Returns:
+        None
+
+    """
         #Initialize the weights and biases
         n_samples, n_features = X.shape
         self.weights = np.zeros(n_features)
@@ -28,6 +48,15 @@ class LogisticRegression:
             self.bias -= self.lr * db 
     
     def predict(self, X):
+    """Function used to predict the values of the dependent variable
+
+    Args:
+        X: Independent variable
+
+    Returns:
+        Class of the predicted value
+
+    """
         linear_model = np.dot(X, self.weights) + self.bias
         y_predicted = self._sigmoid(linear_model)
         y_predicted_class = [1 if i > 0.5 else 0 for i in y_predicted]
