@@ -11,6 +11,13 @@ class KNN:
         self.k = k;
 
     def fit(self, X, y):
+    """Function used to define the relation between dependent and independent variables
+    Args:
+        X: Independent variable
+        y: Dependent variable
+    Returns:
+        None
+    """
         self.X_train = X
         self.y_train = y
         
