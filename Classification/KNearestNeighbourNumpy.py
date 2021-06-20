@@ -22,6 +22,12 @@ class KNN:
         self.y_train = y
         
     def predict(self, X):
+    """Function used to predict 
+    Args:
+        X: Independent variable
+    Returns:
+        None
+    """
         predicted_labels = [self._predict(x) for x in X]
         return np.array(predicted_labels)
 
