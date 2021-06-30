@@ -32,6 +32,12 @@ class KNN:
         return np.array(predicted_labels)
 
     def _predict(self, x):
+     """Function used to compute Euclidean Distance for all the input points
+    Args:
+        X: Independent variable
+    Returns:
+        None
+    """
         #Computing the distances
         distances = [EuclideanDistance(x, x_train) for x_train in self.X_train]
         #Compute the nearest neighbours
