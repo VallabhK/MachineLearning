@@ -1,8 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\NeuralNetwork"
+    "\\Classification"
   ],
-  "SelectedNode": "\\NeuralNetwork\\Perceptron.py",
+  "SelectedNode": "\\Classification\\DecisionTrees.py",
   "PreviewInSolutionExplorer": false
 }
