@@ -1,7 +1,5 @@
 #This file contains implementation of Decision Trees using numpy
 
-import numpy as np
-
 from collections import Counter
 
 import numpy as np
