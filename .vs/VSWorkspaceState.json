@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Classification"
+    "\\Classification",
+    "\\NeuralNetwork"
   ],
   "SelectedNode": "\\Classification\\DecisionTrees.py",
   "PreviewInSolutionExplorer": false
