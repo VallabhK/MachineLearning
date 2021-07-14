@@ -33,6 +33,13 @@ class DecisionTree:
         self.root = None
 
     def fit(self, X, y):
+    """Function used to define the relation between dependent and independent variables
+    Args:
+        X: Independent variable
+        y: Dependent variable
+    Returns:
+        None
+    """
         self.n_feats = X.shape[1] if not self.n_feats else min(self.n_feats, X.shape[1])
         self.root = self._grow_tree(X, y)
 
