@@ -44,6 +44,12 @@ class DecisionTree:
         self.root = self._grow_tree(X, y)
 
     def predict(self, X):
+    """Function used to predict the dependent variable
+    Args:
+        X: Independent variable
+    Returns:
+        Numpy array
+    """
         return np.array([self._traverse_tree(x, self.root) for x in X])
 
     def _grow_tree(self, X, y, depth=0):
