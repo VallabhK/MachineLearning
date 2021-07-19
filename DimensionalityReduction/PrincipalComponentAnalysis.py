@@ -3,6 +3,12 @@ import numpy as np
 
 class PCA:
     def __init__(self, n_components):
+    """Function used to initialize variables
+    Args:
+        n_components: Input parameter
+    Returns:
+        None
+    """
         self.n_components = n_components
         self.components = None
         self.mean = None
