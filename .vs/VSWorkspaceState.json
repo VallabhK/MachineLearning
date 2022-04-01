@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Classification",
-    "\\NeuralNetwork"
+    "\\DimensionalityReduction"
   ],
-  "SelectedNode": "\\Classification\\RandomForest.py",
+  "SelectedNode": "\\DimensionalityReduction\\PrincipalComponentAnalysis.py",
   "PreviewInSolutionExplorer": false
 }
